@@ -23,6 +23,17 @@
         *, *:before, *:after {
           box-sizing: inherit;
         }
+
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: calc(-.5 * var(--bs-gutter-x));
+            margin-left: calc(-.5 * var(--bs-gutter-x));
+            justify-content: center;
+    }
         
         .column {
           float: left;
@@ -154,7 +165,9 @@
         <p class="title">CEO & Founder</p>
         <p>We will add something here later</p>
         <p>julijana@email.com</p>
-        <p><button class="button">Contact</button></p>
+        <form method="get" action="contact.html">
+            <p><button class="button">Contact</button></p>
+        </form>
       </div>
     </div>
   </div>
@@ -169,7 +182,9 @@
           <p class="title">Levo smetalo</p>
           <p>We will add something here later</p>
           <p>nikola@email.com</p>
-          <p><button class="button">Contact</button></p>
+          <form method="get" action="contact.html">
+            <p><button class="button">Contact</button></p>
+          </form>
         </div>
       </div>
     </div>
