@@ -12,19 +12,34 @@
 <body>
 
     <style>
-        .container {
-            margin-top: 65px;
+
+        .container2 {
+            margin-top: 20px;
             border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
+            /* background-color: #f2f2f2; */
+            /* padding: 20px; */
             overflow: auto;
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
         }
 
         .main_pic {
-          margin-top: 5px;
+          margin-top: 20px;
           margin-left: 5px;
           /* margin-right: 5px; */
-          border-radius: 5px;
+          border-radius: 10px 10px 10px 10px;
           width: 100%;
         }
         
@@ -35,6 +50,7 @@
 
     <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
+          <!-- <img src="./assets/img/psd_icon (2).svg" alt="" width="50" height="50"> -->
           <a class="navbar-brand" href="#">P.S. Design</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -54,13 +70,13 @@
                     Projects
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="#">Conceptual</a></li>
+                    <li><a class="dropdown-item" href="./assets/html/conceptual.html">Conceptual</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Public</a></li>
+                    <li><a class="dropdown-item" href="./assets/html/public.html">Public</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Educational</a></li>
+                    <li><a class="dropdown-item" href="./assets/html/educational.html">Educational</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Residential</a></li>
+                    <li><a class="dropdown-item" href="./assets/html/residential.html">Residential</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -72,10 +88,16 @@
         </div>
       </nav>
 
+      <div class="container2">
+        <h1>Something</h1>
+        <p>Some text here on the main page.</p>
+      </div>
+
     <div class="container">
         <form id="logo">
             <div>
               <img class="main_pic" src="./assets/img/psd_export.jpg">
+              <!-- <img class="main_pic" src="./assets/img/psd.obj"> -->
             </div>
         </form>
     </div>
